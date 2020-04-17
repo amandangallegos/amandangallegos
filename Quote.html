@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Request a quote ">
+<meta name="keywords" content="HTML, quote, amanda gallegos, amanda">
+<title>Request a Quote </title>
+<title>Quote.html</title>
+<link href="CSS/AmandaCSS.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="header">
+  <h1>&nbsp;&nbsp;</h1>
+</div>
+
+<div class="topnav">
+  <a href= "index.html">Home</a>
+  <a href= "About.html">About</a>
+  <a href= "Portfolio.html">Portfolio</a>
+  <a href= "Quote.html">Quote</a>
+  <a href= "Contact.html">Contact</a>
+</div>
+  
+<h2 style="text-align:center">Request a Quote</h2>
+
+<p>Complete the form below to receive an estimate of your website design.</p>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">Tell me a little about your project.</textarea>
+  <br><br>
+
+</body>
+<script src="Java/Java.js"></script>
+<FORM Name="myform">
+	<h3 style="background: #EF467E">Website Needs</h3>
+<SELECT NAME="websiteItem" onChange="calculatePrice()" id="websiteItem">
+  <OPTION value="0">Not needed $0</OPTION>
+  <OPTION value="600">I need a brand new website $600</OPTION>
+  <OPTION value="400">I need my website rebuilt $400</OPTION>
+  <OPTION value="200">My website needs minor edits $200</OPTION>
+</SELECT>
+	<h3 style="background: #AAAAAA">Graphics</h3>
+<SELECT NAME="graphicsItem" onChange="calculatePrice()" id="graphicsItem">
+  <OPTION value="0">Not needed $0</OPTION>
+  <OPTION value="75">I have my own grapics $75</OPTION>
+  <OPTION value="200">I need custom grapics $200</OPTION>
+  <OPTION value="300">I would like a slideshow, gallery or portfolio $300</OPTION>
+</SELECT>
+	<h3 style="background: #ED8B9F">Features offered on Website</h3>
+<SELECT NAME="featuresItem" onChange="calculatePrice()" id="featuresItem">
+  <OPTION value="0">Not needed $0</OPTION>
+  <OPTION value="300">Registration Needed $300</OPTION>
+  <OPTION value="400">Mobile Friendly (Responsive Design) $400</OPTION>
+  <OPTION value="200">Contact Form $200</OPTION>
+  <OPTION value="100">Site Search $100</OPTION>
+</SELECT>
+	<h3 style="background: #78ECC5">Ecommerce</h3>
+<SELECT NAME="ecommercceItem" onChange="calculatePrice()" id="ecommerceItem">
+  <OPTION value="0">Not needed $0</OPTION>
+  <OPTION value="600">Shopping Cart $600</OPTION>
+  <OPTION value="350">Credit Card Processing $350</OPTION>
+  <OPTION value="200">PayPal Payment $200</OPTION>
+  <OPTION value="100">Site Search $100</OPTION>
+</SELECT>
+	<h3 style="background: #8ACDEE">SEO</h3>
+<SELECT NAME="seoItem" onChange="calculatePrice()" id="seoItem">
+  <OPTION value="0">Not needed $0</OPTION>
+  <OPTION value="100">MetaTag $100</OPTION>
+  <OPTION value="75">Search Engine Optimization $75</OPTION>
+  <OPTION value="100">Press Release $100</OPTION>
+</SELECT>
+	<h3 style="background: #F492EB">Social Media Integration</h3>
+<SELECT NAME="socialItem" onChange="calculatePrice()" id="socialItem">
+  <OPTION value="0">Not needed $0</OPTION>
+  <OPTION value="100">Twitter $100</OPTION>
+  <OPTION value="100">Facebook $100</OPTION>
+  <OPTION value="100">Instagram $100</OPTION>
+  <OPTION value="100">TikTock $100</OPTION>
+  <OPTION value="100">Linken $100</OPTION>
+  <OPTION value="500">All $500</OPTION>
+</SELECT>
+
+</FORM>
+ <h3>Estimate Total</h3>
+<button type="button" onclick="calculatePrice()">Calculate</button>
+
+The new calculated price:<INPUT type="text" id="PicExtPrice" Size=15>  
+	<br>
+<input type="submit">
+</html>
